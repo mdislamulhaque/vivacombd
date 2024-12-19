@@ -67,7 +67,7 @@ function goToSlide(index) {
   showSlide(currentSlide);
 }
 
-function autoSlide() {
+function autoSlide(index) {
   currentSlide = (currentSlide + 1) % totalSlides;
   showSlide(currentSlide);
 }
