@@ -1,6 +1,8 @@
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
 const mainMenu = document.getElementById("mainMenu");
+const logo = document.getElementById("logo");
+const btn = document.getElementById("btn");
 
 mobileMenuButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
@@ -10,6 +12,13 @@ mainMenu.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
+logo.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+btn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
 // links2.addEventListener("click", () => {
 //   mobileMenu.classList.toggle("hidden");
 // });
