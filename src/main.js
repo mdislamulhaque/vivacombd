@@ -12,13 +12,14 @@ mainMenu.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
-logo.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-});
+// document.getElementById("btn").addEventListener("click", (event) => {
+//   event.preventDefault("active"); // Prevent default behavior
+//   console.log("Button clicked, no reload.");
+// });
 
-btn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-});
+// location.reload();
+// window.location.href = window.location.href;
+
 // links2.addEventListener("click", () => {
 //   mobileMenu.classList.toggle("hidden");
 // });

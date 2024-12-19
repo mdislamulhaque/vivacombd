@@ -70,3 +70,6 @@ html {
   font-weight: 900;
   font-style: normal;
 }
+.menu.active {
+  display: block;
+}
