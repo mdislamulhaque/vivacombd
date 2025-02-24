@@ -11,7 +11,7 @@
 
 document.querySelectorAll(".toggleButton").forEach((button) => {
   button.addEventListener("click", function () {
-    const text = this.previousElementSibling; // প্যারাগ্রাফ সিলেক্ট করা
+    const text = this.previousElementSibling;
     if (text.classList.contains("line-clamp-6")) {
       text.classList.remove("line-clamp-6");
       this.textContent = "Show Less";
