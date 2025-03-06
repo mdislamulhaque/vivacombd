@@ -1,5 +1,3 @@
-
-
 document.querySelectorAll(".toggleButton").forEach((button) => {
   const text = button.previousElementSibling;
   const paraHeight = text.offsetHeight;
@@ -11,7 +9,7 @@ document.querySelectorAll(".toggleButton").forEach((button) => {
   console.log(lineCount); // For debugging, see the calculated line count
 
   // Hide the button if the paragraph has less than 6 lines
-  if (lineCount < 6) {
+  if (lineCount < 5) {
     button.classList.add("hidden");
   } else {
     button.classList.remove("hidden");
