@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post Detail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Header Section -->
+    <header>
+      <nav class="text-white pt-2 fixed top-0 z-50 bg-[#fff] w-full shadow-md">
+        <div class="max-w-[90%] mx-auto">
+          <div class="flex justify-between items-center h-16">
+            <!-- Left Side: Logo -->
+            <div class="flex-shrink-0" id="logo">
+              <a href="index.html" class=""
+                ><img
+                  class="img-fluid w-32"
+                  src="assets/media/viva_logo.png"
+                  alt="logo"
+              /></a>
+            </div>
+
+            <!-- Middle: Menu Items -->
+            <div class="hidden lg:flex flex-shrink-1 gap-6">
+              <a
+                href="index.html"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Home</a
+              >
+              <a
+                href="#services"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Service</a
+              >
+              <a
+                href="#products"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Portfolio</a
+              >
+              <a
+                href="#customers"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Customers</a
+              >
+              <a
+                href="#technologies"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Expertise</a
+              >
+
+              <a
+                href="#contact"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Contact</a
+              >
+              <a
+                href="about.html"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >About Us</a
+              >
+              <a
+                href="blog.html"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Blog</a
+              >
+            </div>
+
+            <!-- Right Side: Button -->
+            <div>
+              <a
+                href="index.html#contact"
+                id="btn"
+                class="px-4 py-2 bg-[#890e68] hover:bg-black hover:text-white transition-all duration-700 text-white rounded-lg block"
+                >Let's Talk</a
+              >
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden flex items-center">
+              <button
+                id="mobile-menu-button"
+                class="text-lime-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+              >
+                <svg
+                  class="h-6 w-6 text-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3" id="mainMenu">
+            <a
+              href="#"
+              id="link1"
+              class="block px-3 py-2 rounded-md text-base text-black font-medium hover:bg-[#890e68] hover:text-white"
+              >Home</a
+            >
+            <a
+              href="#services"
+              id="link2"
+              class="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-[#890e68] hover:text-white"
+              >Service</a
+            >
+            <a
+              href="#products"
+              class="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-[#890e68] hover:text-white"
+              >Portfolio</a
+            >
+            <a
+              href="#customers"
+              class="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-[#890e68] hover:text-white"
+              >Customers</a
+            >
+            <a
+              href="#technologies"
+              class="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-[#890e68] hover:text-white"
+              >Expertise</a
+            >
+
+            <a
+              href="#contact"
+              class="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-[#890e68] hover:text-white"
+              >Contact</a
+            >
+            <a
+              href="about.html"
+              class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+              >About Us</a
+            >
+            <a
+              href="blog.html"
+              class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+              >Blog</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto p-8 mt-24">
+      <!-- Blog Post -->
+      <div class="bg-white p-8 rounded-lg shadow-lg mt-8">
+        <!-- Image -->
+        <img
+          src="./assets/media/blog/courier-blog.webp"
+          alt="Post Image"
+          class=""
+        />
+
+        <!-- Post Title -->
+        <h2 class="text-3xl font-semibold text-gray-800 mt-6">
+          How to Learn Web Development in 2025
+        </h2>
+
+        <!-- Post Metadata -->
+        <div class="flex items-center text-gray-600 mt-4">
+          <span class="mr-4"
+            >By <span class="font-semibold">John Doe</span></span
+          >
+          <span>March 6, 2025</span>
+        </div>
+
+        <!-- Post Content -->
+        <div class="text-gray-700 mt-6">
+          <p class="mb-4">
+            Web development has become one of the most in-demand skills in the
+            modern job market. Whether you're interested in building websites,
+            web applications, or exploring the world of front-end and back-end
+            development, it's crucial to understand the foundational concepts of
+            web development.
+          </p>
+
+          <p class="mb-4">
+            In 2025, the field is constantly evolving with new frameworks,
+            technologies, and tools being released every year. Learning web
+            development involves mastering HTML, CSS, and JavaScript as well as
+            staying up-to-date with the latest trends.
+          </p>
+
+          <p class="mb-4">Some essential skills to learn in 2025 include:</p>
+          <ul class="list-disc pl-6">
+            <li class="mb-2">React.js for front-end development</li>
+            <li class="mb-2">Node.js for back-end development</li>
+            <li class="mb-2">Responsive design with Tailwind CSS</li>
+            <li class="mb-2">Version control with Git and GitHub</li>
+          </ul>
+
+          <p class="mb-4">
+            Along with the technical skills, it's also important to develop
+            problem-solving abilities, communication skills, and the ability to
+            work on projects independently or as part of a team.
+          </p>
+
+          <p class="mb-4">
+            In conclusion, web development in 2025 is an exciting and rewarding
+            field. By consistently learning and adapting to new technologies,
+            anyone can build a successful career in this dynamic industry.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="mt-8">
+        <p class="w-[80%] md:w-full text-center ml-9 md:ml-0 pb-10">
+          © 2023. All rights reserved by VIVACOM BD LTD.
+        </p>
+      </footer>
+    </main>
+    <script src="./src/main.js" type="module"></script>
+  </body>
+</html>

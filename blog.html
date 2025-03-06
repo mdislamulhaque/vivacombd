@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100 f">
+    <!-- Header Section -->
+    <header class="">
+      <nav class="text-white pt-2 fixed top-0 z-50 bg-[#fff] w-full shadow-md">
+        <div class="max-w-[90%] mx-auto">
+          <div class="flex justify-between items-center h-16">
+            <!-- Left Side: Logo -->
+            <div class="flex-shrink-0" id="logo">
+              <a href="index.html" class=""
+                ><img
+                  class="img-fluid w-32"
+                  src="assets/media/viva_logo.png"
+                  alt="logo"
+              /></a>
+            </div>
+
+            <!-- Middle: Menu Items -->
+            <div class="hidden lg:flex flex-shrink-1 gap-6">
+              <a
+                href="index.html"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Home</a
+              >
+              <a
+                href="#services"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Service</a
+              >
+              <a
+                href="#products"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Portfolio</a
+              >
+              <a
+                href="#customers"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Customers</a
+              >
+              <a
+                href="#technologies"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Expertise</a
+              >
+
+              <a
+                href="#contact"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Contact</a
+              >
+              <a
+                href="about.html"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >About Us</a
+              >
+              <a
+                href="blog.html"
+                class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+                >Blog</a
+              >
+            </div>
+
+            <!-- Right Side: Button -->
+            <div>
+              <a
+                href="index.html#contact"
+                id="btn"
+                class="px-4 py-2 bg-[#890e68] hover:bg-black hover:text-white transition-all duration-700 text-white rounded-lg block"
+                >Let's Talk</a
+              >
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden flex items-center">
+              <button
+                id="mobile-menu-button"
+                class="text-lime-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+              >
+                <svg
+                  class="h-6 w-6 text-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3" id="mainMenu">
+            <a
+              href="#"
+              id="link1"
+              class="block px-3 py-2 rounded-md text-base text-black font-medium hover:bg-[#890e68] hover:text-white"
+              >Home</a
+            >
+            <a
+              href="#services"
+              id="link2"
+              class="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-[#890e68] hover:text-white"
+              >Service</a
+            >
+            <a
+              href="#products"
+              class="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-[#890e68] hover:text-white"
+              >Portfolio</a
+            >
+            <a
+              href="#customers"
+              class="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-[#890e68] hover:text-white"
+              >Customers</a
+            >
+            <a
+              href="#technologies"
+              class="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-[#890e68] hover:text-white"
+              >Expertise</a
+            >
+
+            <a
+              href="#contact"
+              class="block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-[#890e68] hover:text-white"
+              >Contact</a
+            >
+            <a
+              href="about.html"
+              class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+              >About Us</a
+            >
+            <a
+              href="blog.html"
+              class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+              >Blog</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main
+      class="container mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-4 mt-24"
+    >
+      <a href="./frist-blog.html">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img
+            src="./assets/media/blog/courier-blog.webp"
+            alt=""
+            class="w-full"
+          />
+          <h2 class="text-2xl font-semibold text-gray-800">
+            My First Blog Post
+          </h2>
+          <p class="text-gray-600 mt-2 line-clamp-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            euismod urna eu lorem sodales, et lacinia purus dignissim. Vivamus
+            tempus bibendum odio nec tempus bibendum odio nec Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Quisque euismod urna eu lorem
+            sodales, et lacinia purus dignissim. Vivamus tempus bibendum odio
+            nec tempus bibendum odio nec
+          </p>
+        </div>
+      </a>
+
+      <a href="./frist-blog.html">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img
+            src="./assets/media/blog/courier-blog.webp"
+            alt=""
+            class="w-full"
+          />
+          <h2 class="text-2xl font-semibold text-gray-800">
+            My First Blog Post
+          </h2>
+          <p class="text-gray-600 mt-2 line-clamp-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            euismod urna eu lorem sodales, et lacinia purus dignissim. Vivamus
+            tempus bibendum odio nec tempus bibendum odio nec Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Quisque euismod urna eu lorem
+            sodales, et lacinia purus dignissim. Vivamus tempus bibendum odio
+            nec tempus bibendum odio nec
+          </p>
+        </div>
+      </a>
+
+      <a href="./frist-blog.html">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img
+            src="./assets/media/blog/courier-blog.webp"
+            alt=""
+            class="w-full"
+          />
+          <h2 class="text-2xl font-semibold text-gray-800">
+            My First Blog Post
+          </h2>
+          <p class="text-gray-600 mt-2 line-clamp-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            euismod urna eu lorem sodales, et lacinia purus dignissim. Vivamus
+            tempus bibendum odio nec tempus bibendum odio nec Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Quisque euismod urna eu lorem
+            sodales, et lacinia purus dignissim. Vivamus tempus bibendum odio
+            nec tempus bibendum odio nec
+          </p>
+        </div>
+      </a>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="mt-6">
+      <p class="w-[80%] md:w-full text-center ml-9 md:ml-0 pb-10">
+        © 2023. All rights reserved by VIVACOM BD LTD.
+      </p>
+    </footer>
+    <script src="./src/main.js" type="module"></script>
+  </body>
+</html>
