@@ -89,7 +89,7 @@
   <body>
     <header class="w-full">
       <nav class="text-white pt-2 fixed top-0 z-50 bg-[#fff] w-full shadow-md">
-        <div class="max-w-[90%] mx-auto">
+        <div class="max-w-[88%] mx-auto">
           <div class="flex justify-between items-center h-16">
             <!-- Left Side: Logo -->
             <div class="flex-shrink-0" id="logo">
@@ -183,7 +183,10 @@
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden menu">
-          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3" id="mainMenu">
+          <div
+            class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col"
+            id="mainMenu"
+          >
             <a
               href="#"
               id="link1"
@@ -219,19 +222,19 @@
             >
             <a
               href="about.html"
-              class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+              class="text-black transition-all text-base font-medium duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
               >About Us</a
             >
             <a
               href="blog.html"
-              class="text-black transition-all duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
+              class="text-black transition-all text-base font-medium duration-700 hover:bg-[#890e68] hover:text-white px-3 py-2 rounded"
               >Blog</a
             >
           </div>
         </div>
       </nav>
       <!-- ========================slider============================= -->
-      <div class="relative w-full max-w-[100%] overflow-hidden m-auto py-10">
+      <div class="relative w-full max-w-[100%] overflow-hidden m-auto">
         <div id="slider" class="slider py-[50px]">
           <img
             src="/assets/media/newBannerImage/H1-1.jpg"
@@ -1205,8 +1208,8 @@
     <!-- footer  -->
 
     <footer class="relative z-10 bg-[#090E34] pt-20 lg:pt-[100px] text-white">
-      <div class="container">
-        <div class="-mx-4 flex flex-wrap justify-between px-16">
+      <div class="">
+        <div class="flex flex-wrap justify-between px-16">
           <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div class="mb-10 w-full">
               <a
